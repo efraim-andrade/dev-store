@@ -4,11 +4,13 @@ const config: Config = {
   plugins: [],
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontFamily: {
-      sans: 'var(--font-inter)'
-    },
-    gridTemplateRows: {
-      app: 'min-content max-content'
+    extends: {
+      fontFamily: {
+        sans: 'var(--font-inter)'
+      },
+      gridTemplateRows: {
+        app: 'min-content max-content'
+      }
     }
   }
 }
